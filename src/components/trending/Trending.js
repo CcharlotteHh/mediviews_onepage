@@ -16,6 +16,16 @@ function Trending({title}) {
         desc='desc'
 
         ></TrendingCard>
+          <TrendingCard
+        name="name"
+        desc='desc'
+
+        ></TrendingCard>
+         <TrendingCard
+        name="name"
+        desc='desc'
+
+        ></TrendingCard>
       </section>
     
   )

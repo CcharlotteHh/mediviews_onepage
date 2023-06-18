@@ -5,6 +5,8 @@
     @include flexbox($direction:column,$alignItems:center);
 
     h1{
+        margin-top: 5%;
+        margin-bottom: 5%;
         font-size: 2rem;
         font-weight: bold;
     }

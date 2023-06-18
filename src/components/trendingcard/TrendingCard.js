@@ -7,7 +7,7 @@ function TrendingCard({ img, name, desc,cardBtnTxt, link  }) {
     return (
       
       <div className={styles.trendingCard} >
-      <figure className="projectImg">
+      <figure className={styles.figure}>
         <img src={img} alt="projectimg" />
       </figure>
       <div className="desc">

@@ -6,6 +6,6 @@
 
 .trendingCardContainer{
     width: 90%;
-    background-color: gray;
-    @include grid2($columns: repeat(2, 1fr) ,$column-gap: 10%);
+    
+    @include grid2($columns: repeat(2, 1fr) ,$column-gap: 5rem, $row-gap: 1rem);
 }
