@@ -1,0 +1,10 @@
+@import "../../styles/_mixins";
+.figure{
+    width: 90%;
+    height: 20vw;
+   
+
+    img{
+        @include imgCover;
+    }
+}

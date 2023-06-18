@@ -1,0 +1,30 @@
+@import'../../styles/_variables';
+@import  '../../styles/_mixins';
+@import '../../styles/_breakpoints';
+
+
+
+
+.hamburger{
+    display: none;
+    @include md{
+    position: absolute;
+    top:2%;
+    right: 2%;
+    width: 25px;
+    height: 25px;
+  
+    
+    
+    cursor:pointer;
+    @include flexbox ($direction:column, $justifyContent:space-between);
+    }  
+    .burger{
+        width: 25px;
+        height: 4px;
+        border-radius: 10px;
+        background-color: black;
+      
+
+    }
+}

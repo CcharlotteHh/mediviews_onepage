@@ -1,11 +1,13 @@
 import React from "react";
-import Nav from "./Nav";
-import Footer from "./Footer";
-import Home from "../pages/Home";
+import Nav from "./nav/Nav";
+import Footer from "../components/footer/Footer";
+import Home from "../pages/home/Home";
+import styles from './layout.module.scss';
+import '../styles/_base.scss';
 
 function Layout() {
   return (
-    <div className="layout">
+    <div className={styles.layout}>
       <Nav></Nav>
   
       <Footer></Footer>

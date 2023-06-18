@@ -1,0 +1,16 @@
+@import "../../styles/_mixins";
+@import "../../styles/_variables";
+@import "../../styles/_breakpoints";
+
+.trendingCard{
+    border: 1px solid black;
+    height: 25vw;
+    
+
+    figure{
+        height: 75%;
+        width: 100%;
+        border: 1px solid black;
+    }
+    
+}
