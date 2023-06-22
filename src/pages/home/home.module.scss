@@ -1,5 +1,7 @@
 @import '../../styles/mixins';
+@import '../../styles/variables';
 .homeContainer{
+    font-family: $primaryFontFamily;
     margin-top:2.5%;
     width: 100%;
     @include flexbox($direction:column,$alignItems:center);
@@ -9,6 +11,7 @@
         margin-bottom: 5%;
         font-size: 4rem;
         font-weight: bold;
+        color:$mediGreen;
     }
 
     
