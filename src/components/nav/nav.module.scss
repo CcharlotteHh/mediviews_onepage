@@ -1,11 +1,22 @@
 @import "../../styles/mixins";
 @import "../../styles/breakpoints";
+@import "../../styles/variables";
+
 .nav{
+
     width: 100%;
-    padding:1rem;
+    background-color: $mediGreen;
+    opacity: .8;
+    &.green{
+    
+      opacity: 0.9;
+     
+    }
+
 .navbar {
   
   @include flexbox($justifyContent: space-between, $alignItems: center);
+ 
   
 
   .logoLink {
@@ -22,24 +33,28 @@
 
   .navLinks {
     @include flexbox;
+    margin-left:10% ;
 
     .navLink{
-      margin-left:1em;
+      
+    padding-right: 10px;
     }
 
     @include md {
       display: none;
+      height: 100%;
 
       &.open {
-        margin-top:20%;
+        margin-top:10%;
+       
         width: 100%;
         margin-bottom: 5%;
-        @include flexbox($direction: column, $alignItems: center);
+        @include flexbox($direction: column, $alignItems: center, $justifyContent:space-between);
       }
      
     }
     a {
-      color: black;
+      color:white;
     }
   }
 }

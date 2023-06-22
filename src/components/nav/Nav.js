@@ -9,15 +9,17 @@ import Hamburger from "../hamburger/Hamburger";
 
 function Nav() {
   const [isOpen, setIsOpen] = useState(false);
+  const [isGreen, setIsGreen] = useState(false)
 
   function toggleMenu() {
     setIsOpen(!isOpen);
-    console.log("works");
+    setIsGreen(!isGreen);
+   
   }
   return (
     <Router>
-      <nav className={styles.nav}>
-        <div className={styles.navbar}>
+      <nav className={`${styles.nav} ${isGreen ? styles.green : ""} `}>
+        <div className={styles.navbar} >
 
         
 
