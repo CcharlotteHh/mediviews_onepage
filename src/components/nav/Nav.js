@@ -9,11 +9,15 @@ import Hamburger from "../hamburger/Hamburger";
 
 function Nav() {
   const [isOpen, setIsOpen] = useState(false);
-  const [isGreen, setIsGreen] = useState(false)
+  const [isGreen, setIsGreen] = useState(false);
+  const [isnNotDisplay, setIsNotDisplay] = useState(false);
 
   function toggleMenu() {
     setIsOpen(!isOpen);
     setIsGreen(!isGreen);
+    setIsNotDisplay(!isnNotDisplay);
+
+
    
   }
   return (

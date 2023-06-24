@@ -2,6 +2,7 @@ import React from "react";
 import styles from "./home.module.scss"
 import HomePageFigure from "../../components/homefigure/HomePageFigure";
 import Trending from "../../components/trending/Trending";
+import Blog from '../../components/blog/blog';
 
 function Home() {
   return (
@@ -9,6 +10,7 @@ function Home() {
       <HomePageFigure className={styles.HomePageFigure}></HomePageFigure>
       <h1>Trending</h1>
       <Trending></Trending>
+      <Blog></Blog>
     </div>
   );
 }
