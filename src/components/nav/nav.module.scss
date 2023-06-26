@@ -3,7 +3,8 @@
 @import "../../styles/variables";
 
 .nav{
-
+  font-size: 1.5rem;
+    min-height: 100px;
     width: 100%;
     background-color: $mediGreen;
     opacity: .8;
@@ -20,6 +21,7 @@
   
 
   .logoLink {
+    margin-top: 1%;
     margin-right:auto ;
     @include md {
     
@@ -38,6 +40,10 @@
     .navLink{
       
     padding-right: 10px;
+
+    @include md{
+      margin-right:20% ;
+    }
     }
 
     @include md {

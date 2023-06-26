@@ -34,12 +34,12 @@ function Nav() {
             <li className={styles.navLink}>
               <Link to="/contact">Contact</Link>
             </li>
-            <li>
+            <li className={styles.navLink}>
               <Link to="/instagram" className={styles.navLink}>
                 Instagram
               </Link>
             </li>
-            <li>
+            <li className={styles.navLink}>
               <Link to="/instagram" className={styles.navLink}>
                 Instagram
               </Link>

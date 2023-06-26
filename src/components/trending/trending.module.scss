@@ -3,9 +3,21 @@
 @import "../../styles/_breakpoints";
 
 
+.trendingContainer{
 
+    width: 100%;
+    @include flexbox ($justifyContent:center);
 .trendingCardContainer{
     width: 90%;
     
-    @include grid2($columns: repeat(2, 1fr) ,$column-gap: 5rem, $row-gap: 1rem);
+    @include grid2($columns: repeat(2, 50%) ,$rows: repeat(6, 1fr), $column-gap: 5rem, $row-gap: 1rem);
+
+    @include md{
+       
+        @include grid2($columns: repeat(1, 100%) , $rows: repeat(6, 20%),$column-gap: 5rem, $row-gap: 1rem);
+        
+    }
+
+   
+}
 }

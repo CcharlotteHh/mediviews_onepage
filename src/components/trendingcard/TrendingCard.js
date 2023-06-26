@@ -10,10 +10,10 @@ function TrendingCard({ img, name, desc,cardBtnTxt, link  }) {
       <figure className={styles.figure}>
         <img src={img} alt="projectimg" />
       </figure>
-      <div className="desc">
-        {<h2>{name}</h2>}
-        {<p>{desc}</p>}
-        {<button>{cardBtnTxt}</button>}
+      <div className={styles.desc}>
+        {<h2 className={styles.author}>{name}</h2>}
+        {<p className={styles.desc}>{desc}</p>}
+        {<a className={styles.prBtn}href={link}  target="_blank"  rel="noreferrer">{cardBtnTxt}</a>}
        
      </div>
       </div>

@@ -2,15 +2,44 @@
 @import "../../styles/_variables";
 @import "../../styles/_breakpoints";
 
-.trendingCard{
-    border: 1px solid black;
-    height: 25vw;
-    
+.trendingCard {
+    @include flexbox($direction:column,$alignItems:center);
+  margin-top: 7.5%;
+   height: 65%;
+  width: 90%;
 
-    figure{
-        height: 75%;
-        width: 100%;
-        border: 1px solid black;
+  .desc {
+    width: 100%;
+    margin-top: 1rem;
+
+    .author{
+        font-weight: bold;
+        font-size: 2rem;
+        margin-bottom: 1rem;
+
     }
-    
+    .desc{
+        font-size: 1.2rem;
+        margin-bottom: 5%;
+        
+    }
+
+    .prBtn{
+      width: 50%;
+      height: 40%;
+      background-color: $mediGreen;
+      color:white;
+      padding:2%;
+     
+    }
+  }
+
+  .figure {
+    height: 90%;
+    width: 100%;
+
+    img {
+      @include imgCover;
+    }
+  }
 }
