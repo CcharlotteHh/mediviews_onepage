@@ -7,6 +7,7 @@ import Contact from "../../pages/Contact";
 import styles from "./nav.module.scss";
 import Logo from "../../assets/img/logo.png";
 import Hamburger from "../hamburger/Hamburger";
+import Blog from "../../pages/blog/Blog";
 
 function Nav() {
   const [isOpen, setIsOpen] = useState(false);
@@ -41,8 +42,8 @@ function Nav() {
               </Link>
             </li>
             <li className={styles.navLink}>
-              <Link to="/instagram" className={styles.navLink}>
-                Instagram
+              <Link to="/blog" className={styles.navLink}>
+                Blog
               </Link>
             </li>
           </ul>
@@ -56,6 +57,7 @@ function Nav() {
         <Route path="/" element={<Home />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/overons" element={<Overons />} />
+        <Route path="/blog" element={<Blog />} />
       </Routes>
     </Router>
   );
