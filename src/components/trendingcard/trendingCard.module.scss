@@ -3,34 +3,32 @@
 @import "../../styles/_breakpoints";
 
 .trendingCard {
-    @include flexbox($direction:column,$alignItems:center);
+  @include flexbox($direction: column, $alignItems: center);
   margin-top: 7.5%;
-   height: 65%;
+  height: 65%;
   width: 90%;
 
   .desc {
+   
     width: 100%;
     margin-top: 1rem;
 
-    .author{
-        font-weight: bold;
-        font-size: 2rem;
-        margin-bottom: 1rem;
-
+    .author {
+      font-weight: bold;
+      font-size: 2rem;
+      margin-bottom: 1rem;
     }
-    .desc{
-        font-size: 1.2rem;
-        margin-bottom: 5%;
-        
+    .desc {
+      font-size: 1.2rem;
+      margin-bottom: 5%;
     }
 
-    .prBtn{
+    .prBtn {
       width: 50%;
       height: 40%;
       background-color: $mediGreen;
-      color:white;
-      padding:2%;
-     
+      color: white;
+      padding: 2%;
     }
   }
 

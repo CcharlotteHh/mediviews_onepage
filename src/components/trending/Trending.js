@@ -53,6 +53,16 @@ function Trending({title}) {
         
 
         ></TrendingCard>
+        <TrendingCard
+        img={Placeholder}
+        name="Amber"
+        desc='“Mijn leven, mijn wereld en alles waar ik voor
+        leefde, stortte in”'
+        cardBtnTxt="Lees meer"
+        link="#"
+        
+
+        ></TrendingCard>
         </div>
      
       </section>

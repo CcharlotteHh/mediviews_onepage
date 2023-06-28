@@ -5,7 +5,7 @@ import overonsImg from '../../../assets/img/overonsimg.jpg'
 function Overons() {
   return (
     <div className={styles.overons_container}>
-        <h1>Over ons</h1>
+        <h1 classname={styles.header}>Over ons</h1>
       <div className={styles.img_text_container}>
       <div className={styles.desc_over_ons}>
         <h2>Hoe MediViews is ontstaan</h2>

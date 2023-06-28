@@ -5,7 +5,9 @@
 
 .overons_container{
 
-   
+   .header{
+    font-weight: 3.5rem;
+   }
     
     width: 100%;
     @include flexbox ($alignItems:center,$direction:column);
@@ -14,17 +16,49 @@
         width: 100%;
         @include flexbox($justifyContent:center,$direction:row);
 
+        @include md{
+            @include flexbox($direction:column);
+            height: 100%;
+        }
+
         .desc_over_ons{
-            width: 50%;
-            
+            width: 40%;
+
+            margin: 7%;
+
+            @include md{
+                height: 50%;
+                width: 100%;
+                margin: 0;
+                margin: 0;
+                padding: 4%;
+                margin-bottom:3%;
+              }
+                
             h2{
-                font-size:2rem;
+                font-size:3rem;
+                font-weight: bold;
+                margin-bottom:10%;
+            }
+
+            p{
+                font-size:1.30rem;
             }
         }
 
         .overons_figure{
             width: 40%;
             margin: 7%;
+            @include md{
+                height: 50%;
+                width: 100%;
+                margin: 0;
+                padding: 4%;
+                margin-bottom:3%;
+              }
+                
+
+
 
             img{
                 @include imgCover;

@@ -10,7 +10,7 @@
 .trendingCardContainer{
     width: 90%;
     
-    @include grid2($columns: repeat(2, 50%) ,$rows: repeat(6, 1fr), $column-gap: 5rem, $row-gap: 1rem);
+    @include grid2($columns: repeat(2, 50%) ,$rows: repeat(3, 1fr), $column-gap: 5rem, $row-gap: 1rem);
 
     @include md{
        
